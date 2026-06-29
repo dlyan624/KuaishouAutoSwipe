@@ -36,7 +36,7 @@ public class FloatingWindowService extends Service {
 
     @Override
     public void onCreate() {
-        super.onCreate.onCreate();
+        super.onCreate();
         
         // 创建前台通知
         createNotificationChannel();
@@ -167,7 +167,7 @@ public class FloatingWindowService extends Service {
                         }
                         return true;
                         
-                    case MotionEvent.UP:
+                    case MotionEvent.ACTION_UP:
                         if (!isMoving) {
                             // 是点击事件，不处理（由OnClickListener处理）
                         }
@@ -235,7 +235,7 @@ public class FloatingWindowService extends Service {
 
     @Override
     public void onDestroy() {
-        super.onDestroy.onDestroy();
+        super.onDestroy();
         
         // 移除悬浮窗
         if (floatingView != null && windowManager != null) {
