@@ -199,7 +199,7 @@ public class AutoSwipeService extends AccessibilityService {
         path.quadTo(midX, midY, endX, endY);
         
         // 构建手势描述
-        GestureDescription.Stroke stroke = new GestureDescription.Stroke.Builder()
+        GestureDescription.StrokeDescription stroke = new GestureDescription.StrokeDescription.Builder()
                 .setDuration(duration)
                 .setPath(path)
                 .build();
