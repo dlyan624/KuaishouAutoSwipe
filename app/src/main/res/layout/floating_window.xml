@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:elevation="8dp">
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="快手自动刷视频"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="关闭"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </RelativeLayout>
+
+    <!-- 状态显示 -->
+    <TextView
+        android:id="@+id/tv_floating_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#F5F5F5"
+        android:gravity="center"
+        android:minHeight="60dp"
+        android:padding="8dp"
+        android:text="已停止"
+        android:textColor="#FF5722"
+        android:textSize="13sp" />
+
+    <!-- 控制按钮 -->
+    <Button
+        android:id="@+id/btn_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4CAF50"
+        android:text="开始"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 提示文字 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="可拖动此面板移动位置"
+        android:textColor="#999999"
+        android:textSize="11sp" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">快手自动刷视频</string>
+    <string name="accessibility_service_description">
+        快手极速版自动刷视频服务\n\n
+        功能说明：\n
+        • 自动检测快手极速版界面\n
+        • 自动滑动浏览短视频\n
+        • 模拟真人防检测机制\n\n
+        使用方法：\n
+        1. 开启此服务后返回主界面点击开始\n
+        2. 打开快手极速版APP\n
+        3. 程序会自动开始滑动刷视频\n\n
+        注意：本服务仅用于辅助操作，不会收集任何数据。
+    </string>
+</resources>
